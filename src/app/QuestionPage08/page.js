@@ -6,7 +6,7 @@ import Image from 'next/image';
 import bgImg from '@/../public/bgImg.png';
 import sponsorLOGO from '@/../public/sponsorLOGO.png';
 import BoBoImg from '@/../public/0.start/BoBo.svg';
-import Q2title from '@/../public/1.question/1.2question.svg';
+import Q8title from '@/../public/1.question/1.8question.svg';
 import { usePsyStore } from '@/app/store/store';
 import { cn } from '@/lib/utils'
 
@@ -28,7 +28,7 @@ export default function QuestionPage02() {
     const handleClick = (team) => {
         console.log('選擇的組別：', team);
         setAnswer02(team);
-        router.push('/QuestionPage03');
+        router.push('/ResultPage');
     };
 
     const buttonStyle = `w-full px-4 py-[4px] flex justify-center items-center
@@ -51,16 +51,16 @@ export default function QuestionPage02() {
                     <div className="w-full h-full flex flex-col items-center gap-8 pt-10">
                         {/* 角色圖 */}
                         <Image className="w-52" src={BoBoImg} alt="BoBoImg" />
-                        <Image className="w-[100vw] max-w-[370px]" src={Q2title} alt="Q2title" />
+                        <Image className="w-[100vw] max-w-[370px]" src={Q8title} alt="Q8title" />
 
 
                         {/* 按鈕容器 */}
                         <div className="flex flex-wrap w-full justify-center gap-6 px-4 grow">
                             <div className="w-full flex flex-col gap-5 pb-4 px-5">
-                                <button onClick={() => handleClick("快樂")} className={cn(buttonStyle)}>馬上截圖傳給閨蜜</button>
-                                <button onClick={() => handleClick("悲傷")} className={buttonStyle}>偷偷回看他的限動</button>
-                                <button onClick={() => handleClick("害怕")} className={buttonStyle}>喔喔，好像有點意外</button>
-                                <button onClick={() => handleClick("厭惡")} className={buttonStyle}>有事嗎？我又沒 tag 他</button>
+                                <button onClick={() => handleClick("快樂")} className={cn(buttonStyle)}>刷占卜問他是遇到困難嗎</button>
+                                <button onClick={() => handleClick("悲傷")} className={buttonStyle}>假裝冷靜 一直看上線狀態</button>
+                                <button onClick={() => handleClick("害怕")} className={buttonStyle}>安慰自己：他可能睡著了</button>
+                                <button onClick={() => handleClick("厭惡")} className={buttonStyle}>根本不記得這個人</button>
                             </div>
 
                             {/* {emotionButtons.map(({ label, x, y }) => (
