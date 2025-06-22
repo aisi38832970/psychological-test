@@ -79,10 +79,10 @@ export default function QuestionPage01({ questionIndex, nextStep }) {
                         {/* 按鈕容器 */}
                         <div className="flex flex-wrap w-full justify-center gap-6 px-4 grow">
                             <div className="w-full flex flex-col gap-5 pb-4 px-5">
-                                <button onClick={() => handleClick("快樂")} className={cn(buttonStyle)}>哇…他手指好修長</button>
-                                <button onClick={() => handleClick("悲傷")} className={buttonStyle}>覺得心動，拿耳機就走</button>
-                                <button onClick={() => handleClick("害怕")} className={buttonStyle}>說聲謝謝就走了</button>
-                                <button onClick={() => handleClick("厭惡")} className={buttonStyle}>他該不會是偷裝追蹤器</button>
+                                <button onClick={() => handleClick(3)} className={cn(buttonStyle)}>哇…他手指好修長</button>
+                                <button onClick={() => handleClick(2)} className={buttonStyle}>覺得心動，拿耳機就走</button>
+                                <button onClick={() => handleClick(1)} className={buttonStyle}>說聲謝謝就走了</button>
+                                <button onClick={() => handleClick(0)} className={buttonStyle}>他該不會是偷裝追蹤器</button>
                             </div>
                         </div>
                     </div>

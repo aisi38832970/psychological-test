@@ -53,10 +53,10 @@ export default function QuestionPage08() {
                         {/* 按鈕容器 */}
                         <div className="flex flex-wrap w-full justify-center gap-6 px-4 grow">
                             <div className="w-full flex flex-col gap-5 pb-4 px-5">
-                                <button onClick={() => handleClick("快樂")} className={cn(buttonStyle)}>刷占卜問他是遇到困難嗎</button>
-                                <button onClick={() => handleClick("悲傷")} className={buttonStyle}>假裝冷靜 一直看上線狀態</button>
-                                <button onClick={() => handleClick("害怕")} className={buttonStyle}>安慰自己：他可能睡著了</button>
-                                <button onClick={() => handleClick("厭惡")} className={buttonStyle}>根本不記得這個人</button>
+                                <button onClick={() => handleClick(3)} className={cn(buttonStyle)}>刷占卜問他是遇到困難嗎</button>
+                                <button onClick={() => handleClick(2)} className={buttonStyle}>假裝冷靜 一直看上線狀態</button>
+                                <button onClick={() => handleClick(1)} className={buttonStyle}>安慰自己：他可能睡著了</button>
+                                <button onClick={() => handleClick(0)} className={buttonStyle}>根本不記得這個人</button>
                             </div>
 
                             {/* {emotionButtons.map(({ label, x, y }) => (
