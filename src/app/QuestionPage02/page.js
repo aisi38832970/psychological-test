@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation';
 import MobileFrame from '@/component/layout/MobileFrame';
 import Image from 'next/image';
 import bgImg from '@/../public/bgImg.png';
-import sponsorLOGO from '@/../public/sponsorLOGO.png';
 import BoBoImg from '@/../public/0.start/BoBo.svg';
 import Q2title from '@/../public/1.question/1.2question.svg';
 import { usePsyStore } from '@/app/store/store';

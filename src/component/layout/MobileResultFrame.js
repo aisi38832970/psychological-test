@@ -1,7 +1,6 @@
 'use client';
 
 import bgImg from '@/../public/bgImg.png';
-import sponsorLOGO from '@/../public/sponsorLOGO.png';
 import { usePsyStore } from '@/app/store/store';
 
 

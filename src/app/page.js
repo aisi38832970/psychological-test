@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import bgImg from '@/../public/bgImg.png';
-import sponsorLOGO from '@/../public/sponsorLOGO.png';
 import BoBoImg from '@/../public/0.start/BoBo.svg';
 import titleImg from '@/../public/0.start/title.svg';
 import startBtn from '@/../public/0.start/startBtn.svg';
