@@ -42,10 +42,10 @@ export default function QuestionPage01({ questionIndex, nextStep }) {
     const buttonColors = getButtonColor();
 
     const emotionButtons = [
-        { label: "快樂", x: "translate-x-1", y: "-translate-y-10" },
-        { label: "悲傷", x: "translate-x-22", y: "-translate-y-3" },
-        { label: "害怕", x: "-translate-x-25", y: "translate-y-13" },
-        { label: "厭惡", x: "translate-x-2", y: "-translate-y-16" },
+        { label: "快樂", value:3, x: "translate-x-1", y: "-translate-y-10" },
+        { label: "悲傷", value:2, x: "translate-x-22", y: "-translate-y-3" },
+        { label: "害怕", value:1, x: "-translate-x-25", y: "translate-y-13" },
+        { label: "厭惡", value:0, x: "translate-x-2", y: "-translate-y-16" }
     ];
 
     const buttonStyle = `w-full px-4 py-[4px] flex justify-center items-center
@@ -54,9 +54,9 @@ export default function QuestionPage01({ questionIndex, nextStep }) {
                     transition-colors duration-200 hover:bg-[#F0D4FC] hover:text-[#864DA1]
                     active:bg-[#F0D4FC] active:text-[#864DA1]`
 
-    const handleClick = (emotion) => {
-        console.log('選擇的情緒：', emotion);
-        setAnswer01(emotion);
+    const handleClick = (value) => {
+        console.log('選擇的數值：', value);
+        setAnswer01(value);
         router.push('/QuestionPage02');
     };
 

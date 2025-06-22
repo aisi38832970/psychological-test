@@ -10,24 +10,20 @@ import Q4title from '@/../public/1.question/1.4question.svg';
 import { usePsyStore } from '@/app/store/store';
 import { cn } from '@/lib/utils'
 
-export default function QuestionPage02() {
+export default function QuestionPage04() {
     const router = useRouter();
-    const setAnswer02 = usePsyStore((state) => state.setAnswer02);
+    const setAnswer04 = usePsyStore((state) => state.setAnswer04);
 
     const emotionButtons = [
-        { label: "緒島", x: "-translate-x-2", y: "-translate-y-3" },
-        { label: "雷諾斯的傘", x: "translate-x-5", y: "-translate-y-1" },
-        { label: "Blossom", x: "translate-x-10", y: "-translate-y-7" },
-        { label: "墨魂", x: "translate-x-5", y: "translate-y-6" },
-        { label: "Frame", x: "translate-x-1", y: "-translate-y-13" },
-        { label: "Undrawn", x: "-translate-x-10", y: "translate-y-4" },
-        { label: "BEPPUMETA", x: "-translate-x-3", y: "-translate-y-3" },
-        { label: "蚌殼", x: "translate-x-1", y: "translate-y-0" },
+        { label: "快樂", value:3, x: "translate-x-1", y: "-translate-y-10" },
+        { label: "悲傷", value:2, x: "translate-x-22", y: "-translate-y-3" },
+        { label: "害怕", value:1, x: "-translate-x-25", y: "translate-y-13" },
+        { label: "厭惡", value:0, x: "translate-x-2", y: "-translate-y-16" }
     ];
 
-    const handleClick = (team) => {
-        console.log('選擇的組別：', team);
-        setAnswer02(team);
+    const handleClick = (value) => {
+        console.log('選擇的數值：', value);
+        setAnswer04(value);
         router.push('/QuestionPage05');
     };
 
